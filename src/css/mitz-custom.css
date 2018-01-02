@@ -1,0 +1,255 @@
+
+.btn {
+    border-radius: 0!important;
+}
+
+.sort-hidden{
+    display: none;
+}
+
+/** SINAL DO SLIDER*/
+.greenLight {
+    height: 7px;
+    width: 7px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    margin-left: 13px;
+}
+
+.greenLight.on{
+    background-color: rgb(31, 224, 31);
+}
+.greenLight.off{
+    background-color: rgb(255, 7, 7);
+}
+/* SETTING SWITCHER */
+/* O switcher - o box em volta do slider */
+.switch {
+    position: relative;
+    top: 5px;
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+}
+
+/* configurando defaul do html */
+.switch input {
+    display: none;
+}
+
+/* Slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 15px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(37px);
+    -ms-transform: translateX(37px);
+    transform: translateX(37px);
+}
+
+/*  sliders arredondados */
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+/* END SWITCHER */
+/* Custom Alert Bootstrap */
+.alert {
+    padding: 5px 10px 5px 10px!important;
+}
+
+/* Custom List-Group-Item Bootstrap*/
+.list-group-item {
+    padding: 0px 10px!important;
+    border-radius: 0px!important;
+}
+
+/* Estilos para form nova venda */
+input.input-pesquisar.form-control{
+    width: 80%!important;
+    border-radius: 0;
+}
+
+button#btn-pesquisar-cliente {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.mtz-display-flex{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.section-left{
+    border-right: 1px solid #dbdbdb;
+}
+
+.modal-footer{
+    text-align: left!important;
+}
+
+#mtz-custom-hr{
+    margin-top: 0px!important;
+}
+
+.mtz-scroll{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 430px;
+}
+
+section.mtz-venda.content-body{
+    padding-top: 0px!important;
+}
+
+.mtz-limit-height{
+    height: 100%;
+    max-height: 100%;
+}
+.table-hover > tbody > tr:hover {
+    background-color: #734a541f!important;
+}
+
+.mtz-btn-add button[disabled] {
+    background-color: #ff9393;
+}
+
+.mtz-date{
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.mtz-link{
+
+    color: #777;
+}
+.mtz-link:hover{
+    color: #777;
+    text-decoration: none;
+}
+
+.mtz-link i:hover{
+    color: #08C;
+}
+
+.mtz-info p{
+    display: inline-block;
+    float: right;
+    margin-left: 20px;
+}
+
+/* Estilo para o drop-zone */
+#dropbox{
+    height: 150px;
+    background: white;
+    text-align: center;
+    border: 3px lightgrey dashed;
+    transition: .05s ease-in-out;
+}
+
+#dropbox:hover{
+    border-color: #0088cc;
+    color: #666666;
+    cursor: pointer;
+}
+#lblUpload {
+    background-color: #0088cc;
+    padding: 10px;
+    color: white;
+    transition: .3s ease-in-out;
+}
+
+#lblUpload:hover {
+    cursor: pointer;
+    background-color: #0370a7;
+}
+
+.caption{
+    font-size: 8pt;
+}
+
+#preview p{
+    margin-bottom: 0px;
+}
+
+.mtz-container{
+    position: relative;
+    top: 25%;
+}
+.mtz-container p {
+    margin-bottom: 0px;
+}
+
+/* Floating header Table */
+.scroll {
+    border: 0;
+    border-collapse: collapse;
+  }
+  
+  .scroll tr {
+    display: flex;
+  }
+  
+  .scroll td {
+    padding: 3px;
+    flex: 1 auto;
+    width: 1px;
+  }
+  
+  .scroll thead tr:after {
+    content: '';
+    overflow-y: scroll;
+    visibility: hidden;
+    height: 0;
+  }
+  
+  .scroll thead th {
+    flex: 1 auto;
+    display: block;
+
+  }
+
+  .scroll thead tr th {
+      width: 110%!important;
+  }
+  
+  .scroll tbody {
+    display: block;
+    width: 100%;
+    overflow-y: auto;
+    min-height: 200px;
+    height: 350px;
+  }

@@ -1,0 +1,85 @@
+<!doctype html>
+<html class="fixed">
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>Planilha -> BD</title>
+
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<!-- Web Fonts  -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+
+	<!-- Vendor CSS -->
+	<link rel="stylesheet" href="src/vendor/bootstrap/css/bootstrap.css" />
+	<link rel="stylesheet" href="src/vendor/font-awesome/css/font-awesome.css" />
+
+	<!-- Specific Page Vendor CSS -->
+	<link rel="stylesheet" href="src/vendor/jquery-ui/jquery-ui.css" />
+	<link rel="stylesheet" href="src/vendor/jquery-ui/jquery-ui.theme.css" />
+	<link rel="stylesheet" href="src/vendor/bootstrap-multiselect/bootstrap-multiselect.css" />
+	<link rel="stylesheet" href="src/css/datatable.css" />
+	<link rel="stylesheet" href="src/css/mitz-custom.css" />
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" href="src/css/theme.css" />
+	<link rel="stylesheet" href="src/css/custon.css" />
+	<!-- Head Libs -->
+	<script src="src/vendor/modernizr/modernizr.js"></script>
+	<!-- SweetAlert -->
+	<link rel="stylesheet" type="text/css" href="src/css/swal.css" />
+
+</head>
+
+<body ng-app="app">
+	<section class="body">
+		<!-- start: header -->
+		<ng-view ui-view="header"></ng-view>
+		<!-- start: menu lateral -->
+		<ng-view ui-view="menu"></ng-view>
+		<!-- start: page -->
+		<div class="row">
+			<ng-view ui-view="root"></ng-view>
+		</div>
+		<!-- end: page -->
+		<!-- </section> -->
+
+		<!-- Dependências do Angular -->
+		<script type="text/javascript" src="src/js/angular.min.js"></script>
+		<script type="text/javascript" src="src/js/angular-ui-router.min.js"></script>
+
+		<!-- Controllers -->
+		<script type="text/javascript" src="controllers/app.js"></script>
+		<script type="text/javascript" src="controllers/main.js"></script>
+		<script type="text/javascript" src="controllers/routerConfig.js"></script>
+		<script type="text/javascript" src="controllers/home.js"></script>
+		<!-- FIM CONTROLLERS -->
+
+		<!-- Directives -->
+		<script type="text/javascript" src="directives/fileSender.js"></script>
+		<!-- END Directives -->
+		
+		<!-- Vendor -->
+		<script src="src/vendor/jquery/jquery.js"></script>
+		<script src="src/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+		<script src="src/vendor/bootstrap/js/bootstrap.js"></script>
+		<script src="src/vendor/nanoscroller/nanoscroller.js"></script>
+		<script src="src/js/sweetalert.js"></script>
+		<script src="src/js/datatable.js"></script>
+		<script src="src/js/jquery.mask.min.js"></script>
+		<script src="src/js/dropzone.js"></script>
+		<!-- Theme Base, Components and Settings -->
+		<script src="src/js/theme.js"></script>
+		<script src="src/js/validator.js"></script>
+
+
+		<script>
+
+
+
+		</script>
+</body>
+
+</html>
