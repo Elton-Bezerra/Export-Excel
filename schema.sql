@@ -42,8 +42,8 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `nome`, `email`) VALUES
-(1, 'elton', 'elton.cin@hotmail.com'),
-(2, 'eudes', 'eudesbezerra.silva@gmail.com');
+(1, 'elton', 'exemplo.com@hotmail.com'),
+(2, 'eudes', 'exemplo2.com@gmail.com');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
